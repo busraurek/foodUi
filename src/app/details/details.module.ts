@@ -1,10 +1,12 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
-import { HomePage } from './home.page';
 
-import { HomePageRoutingModule } from './home-routing.module';
+import { IonicModule } from '@ionic/angular';
+
+import { DetailsPageRoutingModule } from './details-routing.module';
+
+import { DetailsPage } from './details.page';
 import { SharedDirectivesModule } from '../directives/shared-directives.module';
 
 @NgModule({
@@ -12,10 +14,10 @@ import { SharedDirectivesModule } from '../directives/shared-directives.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule,
+    DetailsPageRoutingModule,
     SharedDirectivesModule,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  declarations: [HomePage],
+  declarations: [DetailsPage],
 })
-export class HomePageModule {}
+export class DetailsPageModule {}
